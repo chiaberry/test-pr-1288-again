@@ -24,4 +24,4 @@ INNER JOIN feature_layers ON moped_components.feature_layer_id = feature_layers.
 INNER JOIN uniform_features ON moped_proj_components.project_component_id = uniform_features.component_id
 WHERE moped_proj_components.is_deleted IS true;
 
-COMMENT ON VIEW public.project_geography IS 'The project_geography view merges project-specific data with the unified geographical features from the uniform_features view. It links projects with their respective geographical components, including type, attributes, and location.'; -- noqa: LT05
+COMMENT ON VIEW public.project_geography IS 'The project_geography view merges project-specific data with the unified geographical features from the uniform_features view. It links projects with their respective geographical components, including type, attributes, and location. and they are deleted'; -- noqa: LT05
